@@ -1,0 +1,4 @@
+https://olav.ninja/deploying-kubernetes-cluster-on-proxmox-part-1
+https://olav.ninja/deploying-kubernetes-cluster-on-proxmox-part-2
+https://github.com/bpg/terraform-provider-proxmox/tree/main/example
+https://github.com/kubernetes-sigs/kubespray

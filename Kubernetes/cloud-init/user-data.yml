@@ -1,0 +1,21 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - qemu-guest-agent
+
+timezone: Europe/London
+users:
+  - name: <your username>
+    passwd: <your password hash>
+    groups: [adm, cdrom, dip, plugdev, lxd, sudo]
+    lock-passwd: false
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - <your ssh public key>
+
+power_state:
+    delay: now
+    mode: reboot
+    message: Rebooting after cloud-init completion
+    condition: true
